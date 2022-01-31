@@ -1,0 +1,13 @@
+[11-Jan-2017 18:54:16 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/utparasolutions/public_html/utparasolutions.com/clients/vm/searchproductcode.php on line 7
+[11-Jan-2017 18:54:27 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/utparasolutions/public_html/utparasolutions.com/clients/vm/searchproductcode.php on line 7
+[11-Jan-2017 18:54:35 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/utparasolutions/public_html/utparasolutions.com/clients/vm/searchproducts.php on line 7
+[19-May-2017 10:57:33 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 10:57:45 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 11:01:28 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 11:01:34 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 11:07:53 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 11:07:55 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 11:19:11 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 11:19:21 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 11:24:20 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113
+[19-May-2017 11:24:48 Asia/Kolkata] PHP Fatal error:  Call to undefined function findopnbal() in /home/utparasolutions/public_html/usebiller.com/vm/daybook.php on line 113

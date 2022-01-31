@@ -1,0 +1,340 @@
+
+
+<html>
+
+<head>
+
+<title><a href="#">CALCULATOR</a> <a href="#">USING</a> PHP</title>
+
+<a href="#">style</a> type="text/css">              /*ADDING <a href="#">BACKGROUNG</a> <a href="#">COLOUR</a> ANS SETTINGS*/
+
+ <a href="#">body{
+ </a>
+
+ <a href="#">background-color</a>: #d2b48c;
+
+    <a href="#">margin-left</a>: 20%;
+
+    margin-right:20%;
+
+    <a href="#">border</a>: 1px dotted gray;
+
+    font-family: sans-serif;
+
+        }
+
+<a href="#">style</a>
+
+     
+
+<head>
+
+<body>
+
+ 
+
+<center></br></br>
+
+ 
+
+<form name="frm" action="form1.php" method="post">
+
+ Enter Value:
+
+<input type="text" name="first" value= "<?php echo $_REQUEST['number'];
+
+ echo $_REQUEST['calculate'];echo $_REQUEST['result']; ?>"> </br></br>
+
+</from>
+
+ 
+
+ 
+
+<form name="frm" action="form1.php" method="post">
+
+<input type="submit" name="number" value="1">
+29
+</from>
+30
+ 
+31
+<form name="frm" action="form1.php" method="post">
+32
+ <input type="submit" name="number" value="2">
+33
+ </from>
+34
+  
+35
+ <form name="frm" action="form1.php" method="post">
+36
+<input type="submit" name="number" value="3"></br></br>
+37
+</from>
+38
+<form name="frm" action="form1.php" method="post">
+39
+<input type="submit" name="number" value="4">
+40
+</from>
+41
+ 
+42
+<form name="frm" action="form1.php" method="post">
+43
+<input type="submit" name="number" value="5">
+44
+</from>
+45
+ 
+46
+<form name="frm" action="form1.php" method="post">
+47
+<input type="submit" name="number" value="6"></br></br>
+48
+</from>
+49
+ 
+50
+<form name="frm" action="form1.php" method="post">
+51
+<input type="submit" name="number" value="7">
+52
+</from>
+53
+ 
+54
+<form name="frm" action="form1.php" method="post">
+55
+<input type="submit" name="number" value="8">
+56
+</from>
+57
+ 
+58
+ 
+59
+<form name="frm" action="form1.php" method="post">
+60
+<input type="submit" name="number" value="9"></br></br>
+61
+</from>
+62
+ 
+63
+<form name="frm" action="form1.php" method="post">
+64
+<input type="submit" name="calculate" value="+">
+65
+</from>
+66
+ 
+67
+<form name="frm" action="form1.php" method="post">
+68
+<input type="submit" name="calculate" value="0">
+69
+</from>
+70
+ 
+71
+<form name="frm" action="form1.php" method="post">
+72
+<input type="submit" name="calculate" value="*"></br></br>
+73
+</from>
+74
+<form name="frm" action="form1.php" method="post">
+75
+<input type="submit" name="calculate" value="/">
+76
+</from>
+77
+ 
+78
+ 
+79
+<form name="frm" action="form1.php" method="post">
+80
+<input type="submit" name="calculate" value="-"></br></br>
+81
+</form>
+82
+ 
+83
+<form name="frm" action="form1.php" method="post">
+84
+<input type="submit" value="=" name="result">
+85
+ 
+86
+</form>
+87
+ 
+88
+</center>
+89
+</body>
+90
+</html>
+
+
+
+view sourceprint?
+01
+for form1.php
+02
+ 
+03
+ 
+04
+<html>
+05
+<head>
+06
+<title></title>
+07
+</head>
+08
+<body>
+09
+ 
+10
+<?php
+11
+ 
+12
+ 
+13
+            if(isset($_POST['result']))
+14
+           {
+15
+           include "at.php";
+16
+             $oper=$_POST['calculate'];
+17
+              
+18
+            if($_oper == '+')
+19
+            {  
+20
+                echo "+";
+21
+                $oper='+';
+22
+                $result=$_POST['number']+10;
+23
+                echo $result;
+24
+                
+25
+            }
+26
+         else if($oper == '-')
+27
+            {
+28
+                    echo "-";
+29
+                    $oper='-';
+30
+                    $result=$_POST['number']-10;
+31
+                    echo $result;
+32
+                     
+33
+            }
+34
+            else if($_POST['calculate'] == '/' )
+35
+            {
+36
+                    echo "/";
+37
+                    $oper='/';
+38
+                    $result=$_POST['number']/10;
+39
+                    echo $result;
+40
+                 
+41
+            }
+42
+            else
+43
+     
+44
+                {
+45
+                    echo "*";
+46
+                    $oper='*';
+47
+                    $result=$_POST['number']*10;
+48
+                    echo $result;
+49
+                }
+50
+            }
+51
+     
+52
+ 
+53
+        if(isset($_POST['number']))
+54
+            {
+55
+             
+56
+            include "at.php";
+57
+            $var=$_POST['number'];
+58
+             
+59
+            echo "</br>";
+60
+            echo  $var;
+61
+            echo "Enter the operator";
+62
+            }
+63
+   
+64
+        if(isset($_POST['calculate']))
+65
+            {
+66
+            include "at.php";
+67
+            $oper=$_POST['calculate'];
+68
+             
+69
+            echo $_POST['calculate'];
+70
+            echo "</br>";
+71
+             
+72
+            }
+73
+             
+74
+                         
+75
+            ?>
+76
+         
+77
+</body>
+78
+</html>
